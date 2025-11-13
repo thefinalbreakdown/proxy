@@ -1,19 +1,18 @@
-# Hyperliquid Basic Proxy (Vercel)
+# Hyperliquid Basic Proxy (CORS Fixed)
 
-This is a minimal serverless proxy for the Hyperliquid API.
+A minimal Vercel serverless proxy that supports:
 
-## Endpoints supported
-- POST /api/funding
-  - { "type": "meta" }
-  - { "type": "fundingHistory", "coin": "BTC" }
+- POST { type: "meta" }
+- POST { type: "fundingHistory", coin: "BTC" }
 
-## How to deploy
-1. Upload this folder to a new GitHub repository.
+### Deploy Instructions
+
+1. Upload this folder to a new GitHub repo.
 2. Go to https://vercel.com → New Project.
-3. Import your GitHub repo.
-4. Click Deploy.
-5. Your proxy URL will be:
+3. Import the repo.
+4. Deploy.
+5. Your working proxy endpoint will be:
 
-   https://YOUR-PROJECT-NAME.vercel.app/api/funding
+   https://YOUR-PROJECT.vercel.app/api/funding
 
-Use that URL inside your HTML or Streamlit app.
+Use that endpoint in your HTML or Streamlit app.
